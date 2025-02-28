@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #202020;
+            color: white;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+        }
+        header ul {
+            display: flex;
+            list-style: none;
+        }
+        header ul li {
+            margin-left: 20px;
+        }
+        header ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            text-align: center;
+        }
+        .search-box {
+            display: flex;
+            align-items: center;
+            background: #3a3a3a;
+            padding: 12px;
+            border-radius: 24px;
+            width: 90%;
+            max-width: 500px;
+        }
+        .search-box input {
+            flex: 1;
+            border: none;
+            background: transparent;
+            color: white;
+            outline: none;
+            padding: 5px;
+        }
+        .search-box i {
+            margin: 0 10px;
+            color: #888;
+        }
+        .buttons {
+            margin-top: 20px;
+            display: flex;
+            gap: 10px;
+        }
+        .buttons button {
+            background: #3a3a3a;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+        }
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+            }
+            .buttons {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#store">Store</a></li>
+        </ul>
+        <ul>
+            <li><a href="#gmail">Gmail</a></li>
+            <li><a href="#images">Images</a></li>
+            <li><a href="#bars"><i class="fa-solid fa-bars"></i></a></li>
+            <li><a href="#user"><i class="fa-solid fa-user"></i></a></li>
+        </ul>
+    </header>
+    <div class="main-container">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png" alt="Google">
+        <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search Google">
+            <i class="fa-solid fa-microphone"></i>
+            <i class="fa-solid fa-camera"></i>
+        </div>
+        <div class="buttons">
+            <button>Google Search</button>
+            <button>I'm Feeling Lucky</button>
+        </div>
+    </div>
+    <footer>
+        <p>Google offered in: <a href="#hindi">Hindi</a>, <a href="#espanol">Español</a>, <a href="#arabic">Arabic</a></p>
+    </footer>
+</body>
+</html>
